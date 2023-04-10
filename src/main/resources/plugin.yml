@@ -1,0 +1,10 @@
+name: MTPolls
+version: ${version}
+author: TeamMT
+api-version: 1.13
+main: teammt.mtpolls.main.MTPolls
+commands:
+    mtpolls:
+        usage: /<command>
+        description: The main command to access polls
+        aliases: [polls, mtp, poll, mtpoll]
