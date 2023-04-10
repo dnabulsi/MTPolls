@@ -1,0 +1,132 @@
+prefix: "&7[&cMTPolls&7] "
+messages:
+  plugin:
+    plugin-reloaded: "&7Reloaded the plugin!"
+    help-menu:
+      - "&7&m--------------&c MTPolls &7&m------------------"
+      - "[suggest value=\"/mtpolls help\" text=\"&cClick me to show the command!\"]&c/mtpolls help&7&o - Shows the help menu for the plugin[/suggest]"
+      - "[suggest value=\"/mtpolls create\" text=\"&cClick me to show the command!\"]&c/mtpolls create&7&o - Opens poll creation GUI[/suggest]"
+      - "[suggest value=\"/mtpolls reopen\" text=\"&cClick me to show the command!\"]&c/mtpolls reopen&7&o - Reopens poll creation GUI if you have an active session[/suggest]"
+      - "[suggest value=\"/mtpolls list\" text=\"&cClick me to show the command!\"]&c/mtpolls list&7&o - Shows all active polls you can vote on[/suggest]"
+      - "[suggest value=\"/mtpolls results\" text=\"&cClick me to show the command!\"]&c/mtpolls results&7&o - Shows all closed polls and their results[/suggest]"
+      - "[suggest value=\"/mtpolls reload\" text=\"&cClick me to show the command!\"]&c/mtpolls reload&7&o - Reloads the plugin configuration[/suggest]&r"
+      - "&7&m--------------&c MTPolls &7&m------------------"
+    active-polls-container-title: "&8Active Polls"
+    closed-polls-container-title: "&8Closed Polls"
+    poll-successfully-voted: "&aSuccessfully voted for '%option%' on '%name%' poll."
+    poll-successfully-created: "&a'%pollname%' poll successfully created."
+    poll-gui: "&7Please fill in your poll information in the GUI."
+    no-editing-session-found: "&cNo editing session was found. Please create a new poll with '/mtpolls create'."
+    unfinished-poll: "&cUnable to create poll. The following are missing: %unfinished%."
+    option-successfully-added: "&aOption '%option%' successfully added to '%pollname%' poll."
+    already-voted: "&cYou've already voted for this option."
+    invalid-question: "&cPlease enter a valid question for your poll within 100 characters."
+    long-name: "&c'%name%' is too long. Please pick a name within 20 characters."
+    long-question: "&c'%question%' is too long. Please pick a question within 50 characters."
+    long-option: "&c'%option%' is too long. Please pick an option within 50 characters."
+    poll-item-name: "&7'&6%poll-name%&7' Poll"
+    poll-item-open-no-vote-lore:
+    - ""
+    - "&7You have not voted for this poll yet."
+    - "&7Time remaining: &6%time%"
+    - "&7Created on: &6%date%"
+    - "&7Created by: &6%player-name%"
+    - "&7Total votes: &6%votes%"
+    poll-item-open-vote-lore:
+    - ""
+    - "&7You have voted for: '&a%option%&7'."
+    - "&7Time remaining: &6%time%"
+    - "&7Created on: &6%date%"
+    - "&7Created by: &6%player-name%"
+    - "&7Total votes: &6%votes%"
+    poll-item-closed-no-vote-lore:
+    - ""
+    - "&7Created on: &6%date%"
+    - "&7Created by: &6%player-name%"
+    - "&7Total votes: &6%votes%"
+    poll-item-closed-vote-lore:
+    - ""
+    - "&7You voted for: '&a%option%&7'."
+    - "&7Created on: &6%date%"
+    - "&7Created by: &6%player-name%"
+    - "&7Total votes: &6%votes%"
+    
+    poll-creator-gui-title: "&8Creating A Poll"
+    enter-name: "&7Please enter a name for your poll. &r[hover value=\"&7Example: &eDogs or Cats\"]&5&l[EXAMPLE]&r[/hover]"
+    name-added: "&aName '%name%' successfully added to your poll."
+    enter-question: "&7Please enter a question for your poll. &r[hover value=\"&7Example: &eDo you prefer dogs or cats?\"]&5&l[EXAMPLE]&r[/hover]"
+    question-added: "&aQuestion '%question%' successfully added to your poll."
+    enter-duration: "&7Please enter a duration for your poll. &r[hover value=\"&7Example: &e21d2h31m2s\"]&5&l[EXAMPLE]&r[/hover]"
+    duration-added: "&aDuration '%duration%' successfully added to your poll."
+    invalid-duration: "&c'%duration%' is invalid. Please enter a valid duration. &r[hover value=\"&7Example: &e21d2h31m2s\"]&5&l[EXAMPLE]&r[/hover]"
+    enter-option: "&7Please enter an option for your poll. &r[hover value=\"&7Example: &eCats\"]&5&l[EXAMPLE]&r[/hover]"
+    option-added: "&aOption '%option%' successfully added to your poll."
+    option-removed: "&aOption '%option%' successfully removed from your poll."
+    poll-ended: "&cThis poll has already ended. You cannot vote anymore."
+    viewable-closed-poll-container-time-name: "&7Poll Stats:"
+    viewable-closed-poll-container-time-lore:
+    - ""
+    - "&7Created on: &6%date%"
+    - "&7Created by: &6%player-name%"
+    - "&7Total votes: &6%votes%"
+    viewable-open-poll-container-time-name: "&7Poll Stats:"
+    viewable-open-poll-container-time-lore:
+    - ""
+    - "&7Created on: &6%date%"
+    - "&7Created by: &6%player-name%"
+    - "&7Total votes: &6%votes%"
+    - "&7Time remaining: &6%time%"
+    confirmation-dialogue-confirm-name: "&aConfirm"
+    confirmation-dialogue-confirm-lore: 
+    - ""
+    - "&7Click to finalize creating "
+    - "&7your poll. You cannot change"
+    - "&7it after confirming."
+    confirmation-dialogue-close-name: "&cStop Creating Poll"
+    confirmation-dialogue-close-lore: 
+    - ""
+    - "&7Are you sure? All"
+    - "&7changes will be lost."
+
+    confirmation-dialogue-question-name: "&7Question of Poll"
+    confirmation-dialogue-question-lore: 
+    - ""
+    - "&6%question%"
+    confirmation-dialogue-no-question-name: "&6Create a question!"
+
+    confirmation-dialogue-option-name: "&7This is a poll option."
+    confirmation-dialogue-option-lore: 
+    - ""
+    - "&6%option%"
+    confirmation-dialogue-no-option-name: "&6Create more options!"
+
+    confirmation-dialogue-duration-name: "&7Duration of Poll"
+    confirmation-dialogue-duration-lore: 
+    - ""
+    - "&6%duration%"
+
+    confirmation-dialogue-name-name: "&7Name of Poll"
+    confirmation-dialogue-name-lore: 
+    - ""
+    - "&6%name%"
+    confirmation-dialogue-no-name-name: "&6Create a name!"
+
+    viewable-poll-container-question-name: "&6%question%"
+    viewable-poll-container-option-name: "&7Option %letter%"
+    viewable-poll-container-option-lore: 
+    - ""
+    - "&6%option%"
+    - "&f%votes% votes"
+    viewable-poll-container-option-voted-name: "&7Option %letter%"
+    viewable-poll-container-option-voted-lore: 
+    - ""
+    - "&6%option%"
+    - "&f%votes% votes"
+    - "&7You voted for"
+    - "&7this option."
+
+    viewable-poll-container-close-name: "&cStop Voting on Poll"
+    viewable-poll-container-close-lore:
+    - ""
+    - "&7Click to close poll"
+    - "&7voting menu."
